@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div style="width: 100%;">
+        <h1 style="text-align: center; margin-top: 1vh;">Tic Tac Toe!</h1>
+        <hr>
+    </div>
+
+    <h2 id="timer-text" style="text-align: center; margin-top: 1vh;"></h2>
+
+    <h2 id="players-turn" style="text-align: center; margin-top: 1vh;"></h2>
+
+    <div id='game-container' class="game-container">
+        <div id="box1" class="tic-box"><strong id="ticText1" class="tic-box-item"></strong></div>
+        <div id="box2" class="tic-box"><strong id="ticText2" class="tic-box-item"></strong></div>
+        <div id="box3" class="tic-box"><strong id="ticText3" class="tic-box-item"></strong></div>
+        <div id="box4" class="tic-box"><strong id="ticText4" class="tic-box-item"></strong></div>
+        <div id="box5" class="tic-box"><strong id="ticText5" class="tic-box-item"></strong></div>
+        <div id="box6" class="tic-box"><strong id="ticText6" class="tic-box-item"></strong></div>
+        <div id="box7" class="tic-box"><strong id="ticText7" class="tic-box-item"></strong></div>
+        <div id="box8" class="tic-box"><strong id="ticText8" class="tic-box-item"></strong></div>
+        <div id="box9" class="tic-box"><strong id="ticText9" class="tic-box-item"></strong></div>
+    </div>
+
+    <div class="restart-box" id="restart-box">
+        <h2 style="text-align: center; margin-top: 1vh;">Do you want to play again?</h2>
+        <button id="yes-restart" style="margin-top: 1vh; width: 100%; height: auto; padding: 5px; background-color: blue; color: white;
+            border: none; border-radius: 5px;">
+        Yes
+        </button>
+        <button id="no-restart" style="margin: 1vh 0; width: 100%; height: auto; padding: 5px; background-color: red; color: white;
+            border: none; border-radius: 5px;">
+            No
+        </button>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
