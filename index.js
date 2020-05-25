@@ -128,7 +128,7 @@ function checkCount(){
 }
 
 function checkGame(){
-    if(box1.innerText === box2.innerText && box2.innerText === box3.innerText){
+    if((box1.innerText === 'X' || box1.innerText === 'O') && box1.innerText === box2.innerText && box2.innerText === box3.innerText){
         didTheyWin();
     }else if((box1.innerText === 'X' || box1.innerText === 'O') && box1.innerText === box4.innerText && box4.innerText === box7.innerText){
         didTheyWin();
@@ -139,6 +139,8 @@ function checkGame(){
     }else if((box3.innerText === 'X' || box3.innerText === 'O') && box3.innerText === box5.innerText && box5.innerText === box7.innerText){
         didTheyWin();
     }else if((box3.innerText === 'X' || box3.innerText === 'O') && box3.innerText === box6.innerText && box6.innerText === box9.innerText){
+        didTheyWin();
+    }else if((box4.innerText === 'X' || box4.innerText === 'O') && box4.innerText === box5.innerText && box5.innerText === box6.innerText){
         didTheyWin();
     }else if((box7.innerText === 'X' || box7.innerText === 'O') && box7.innerText === box8.innerText && box8.innerText === box9.innerText){
         didTheyWin();
